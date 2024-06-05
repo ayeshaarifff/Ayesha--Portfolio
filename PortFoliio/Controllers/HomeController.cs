@@ -15,6 +15,31 @@ namespace PortFoliio.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Message"] = " My name is Ayesha Arif. I am from Sialkot. I have completed my bachelor's degree or\r\nSoftware Engineering from university of Sialkot.";
+            return View();
+        }
+
+        public ActionResult Index1()
+        {
+            TempData["Message"] = "Hello, World!";
+            return RedirectToAction("About");
+        }
+        public ActionResult Index2()
+        {
+            // Using ViewData
+            ViewData["Message"] = "My name is Ayesha Arif. I am from Sialkot. I have completed my bachelor's degree ";
+
+            // Using ViewBag
+            ViewBag.Message = "Hello, World!";
+
+            // Using TempData
+            TempData["Message"] = "Hello, World!";
+
+            return View();
+        }
+        public ActionResult Index3()
+        {
+            ViewBag.Message = "My Name Is Ayesha";
             return View();
         }
 
@@ -34,7 +59,7 @@ namespace PortFoliio.Controllers
         {
             return View();
         }
-
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

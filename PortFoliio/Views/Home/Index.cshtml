@@ -23,7 +23,15 @@
     color: antiquewhite;
     background:#001b29;
     }
-   
+
+        .footer[b-gv3926tph5] {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            white-space: nowrap;
+            line-height: 60px;
+        }
+
     .home {
     position: relative;
     width: 100%;
@@ -233,7 +241,8 @@
                 gap:3rem;
                 padding-left:30px;
                 margin-top:150px;
-            }.Contact-text h2{
+            }
+            .Contact-text h2{
                 font-size:90px;
                 line-height:1;
                 text-align:center;
@@ -280,26 +289,26 @@
                 transform:scale(1.01)translate(-5px);
                 color:aqua;
             }
-            .Contact.icons i
+            .Contact-icons l
             {
-                display:inline-flex;
-                justify-content:center;
-                align-items:center;
-                width:40px;
-                height:40px;
-                background:transparent;
-                border:2px solid #0ef;
-                border-radius:50%;
-                font-size:20px;
-                color:aqua;
-                text-decoration:none;
-                margin:30px 15px 30px 0;
-                transition: -5s ease;
-                opacity:0;
-                animation:slideleft 1s ease forwards;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            font-size: 20px;
+            color: aqua;
+            text-decoration: none;
+            margin: 30px 15px 30px 0;
+            transition: -5s ease;
+            opacity: 0;
+            animation: slideleft 1s ease forwards;
 
             }
-            .Contact-icons i:hover{
+            .Contact-icons l:hover{
                 background:#0ef;
                 color:#000;
                 box-shadow:0 0 20px #0ef;
@@ -369,7 +378,9 @@
                         HTML developer (2010-2012)
                     </div>
                     <div class="vertical-desc">
-                        
+                    HTML to create website layouts based on templates and wireframes. 
+                    HTML is a semantic language used to control how information on websites and in 
+                    web apps is structured and to determine how users navigate and interact with them
                     </div>
                 </div>
                 <div class="vertical">
@@ -377,12 +388,10 @@
                     <div class="vertical-title">
                         HTML developer Facebook (2012-2014)
                     </div>
-                    HTML developer is a professional web designer who uses HTML
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde omnis ullam, enim facilis
-                        possimus accusamus ab! Dolores mollitia odio quos. Facilis,
-                        incidunt?
+                    HTML to create website layouts based on templates and wireframes.
+                    HTML is a semantic language used to control how information on websites and in
+                    web apps is structured and to determine how users navigate and interact with them
                     </div>
                 </div>
                 <div class="vertical">
@@ -391,10 +400,9 @@
                         HTML developer YouTube (2014-2015)
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde omnis ullam, enim facilis
-                        possimus accusamus ab! Dolores mollitia odio quos. Facilis,
-                        incidunt?
+                    HTML to create website layouts based on templates and wireframes.
+                    HTML is a semantic language used to control how information on websites and in
+                    web apps is structured and to determine how users navigate and interact with them
                     </div>
                 </div>
                 <div class="vertical">
@@ -403,10 +411,9 @@
                         HTML developer Twitter (2015-2016)
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde omnis ullam, enim facilis
-                        possimus accusamus ab! Dolores mollitia odio quos. Facilis,
-                        incidunt?
+                    HTML to create website layouts based on templates and wireframes.
+                    HTML is a semantic language used to control how information on websites and in
+                    web apps is structured and to determine how users navigate and interact with them
                     </div>
                 </div>
                 </div>
@@ -424,7 +431,7 @@
                     <li><i class='bx bx-phone'></i>012345678</li>
 
                </div>
-               <div class="Contact.icon">
+               <div class="Contact-icon">
                     <a href=""><i class='bx bxl-facebook-circle'></i></a>
                     <a href=""><i class='bx bxl-twitter'></i></a>
                     <a href=""><i class='bx bxl-instagram'></i></a>
@@ -441,6 +448,10 @@
                  </div>
              </div>
        </section>
+       <h2>@ViewData["Message"]</h2>
+       <h2>@TempData["Message"]</h2>
+       <h2>@ViewBag.Message</h2>
+
     </body>
 </html>
 
