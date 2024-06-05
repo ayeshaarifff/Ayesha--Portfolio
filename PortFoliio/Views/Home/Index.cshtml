@@ -1,0 +1,446 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <style>
+      
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    }
+    body {
+    color: antiquewhite;
+    background:#001b29;
+    }
+   
+    .home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: #001b29;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    }
+
+    .home-contact {
+    max-width: 640px;
+    }
+
+    .home-contact h3 {
+    font-size: 32px;
+    font-weight: 700;
+    }
+
+    .home-contact h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    }
+
+    .home-contact p {
+    font-size: 20px;
+    }
+
+        .home-sci a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            font-size: 20px;
+            color: aqua;
+            text-decoration: none;
+            margin: 30px 15px 30px 0;
+        }
+
+            .home-sci a:hover {
+                background: #0ef;
+                color: #001b29;
+                box-shadow: 0 0 20px #0ef;
+            }
+
+        .btn-box {
+            display: inline-block;
+            border-radius: 40px;
+            padding: 12px 28px;
+            background: #0ef;
+            font-size: 16px;
+            color: #001b29;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+            .btn-box:hover {
+                box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,0 0 50px cyan,
+                0 0 100px cyan, 0 0 200px cyan,
+            }
+
+        .about
+        {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+        }
+        .about-img Img
+        {
+        padding-bottom: 20%;
+        max-width: 6630px;
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+        }
+        .about-text h2
+        {
+        font-size: 60px
+        }
+        .about-text h2 span
+        {
+        color:#0ef;
+        }
+        .about-text h3{
+            font-size:29px;
+            font-weight:600;
+            color:antiquewhite;
+            line-height:1.7;
+            margin:15px 0 34px;
+        }
+        .about-text p{
+            color:antiquewhite;
+            font-size:20px;
+            line-height:1.4;
+            margin-bottom:4rem;
+        }
+      .bar
+      {
+          font-size:23px;
+      }
+      .Technical-bars .bar
+      {
+          margin-top:40px 0;
+      }
+      .Technical-bars.bar:first-child{
+          margin-top:0;
+      }
+      .Technical-bars .bar:last-child
+      {
+          margin-bottom:auto;
+      }
+      .Technical-bars .bar.info
+      {
+          margin-bottom:5px;
+      }
+      .Technical-bars .bar.info span{
+          font-size:17px;
+          font-weight:500;
+          animation:showText 0.5s in linear forwards;
+          opacity:0;
+      }
+      .Technical-bars .bar.progress-line{
+          position:relative;
+          border-radius:10px;
+          width:100%;
+          height:5px;
+          background-color:black;
+          animation:alternate 5s;
+      }
+       /*----------------------Services------------*/
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+            .secondSection h1 {
+                font-size: 1.9rem;
+            }
+
+            .secondSection .box {
+                background-color: antiquewhite;
+                width: 80vw;
+                height: 2px;
+                margin: 56px 0;
+                display: flex;
+            }
+
+            .secondSection .vertical {
+                height: 93px;
+                width: 1px;
+                background-color: white;
+                margin: 0 110px;
+            }
+
+        .image_top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            font-size: 14px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #001b29;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+            .footer ul {
+                list-style: none;
+            }
+            .Contact
+            {
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                align-items:center;
+                gap:3rem;
+                padding-left:30px;
+                margin-top:150px;
+            }.Contact-text h2{
+                font-size:90px;
+                line-height:1;
+                text-align:center;
+            }
+            .Contact-text h2 span
+            {
+                color:aqua;
+            }
+            .Contact-text h4
+            {
+                margin:15px;
+                color:rgb(228,228,228);
+                font-size:20px;
+                font-weight:600;
+            }
+            .Contact-text p{
+                color:rgb(177,177,177);
+                font-size:20px;
+                line-height:30px;
+                margin-bottom:2rem;
+
+            }
+            .Contact-list{
+                margin-bottom:10px;
+                display:block;
+            }
+            .Contact-list l1{
+                margin-bottom:10px;
+                display:block;
+            }
+            .Contact-list l1{
+                margin-bottom:10px;
+                display:block;
+            }
+            .Contact-list i
+            {
+            display:inline-block;
+            color:aqua;
+            font-size:20px;
+            font-weight:600;
+            transition:all,40s,ease;
+            }
+            .Contact-list li a:hover{
+                transform:scale(1.01)translate(-5px);
+                color:aqua;
+            }
+            .Contact.icons i
+            {
+                display:inline-flex;
+                justify-content:center;
+                align-items:center;
+                width:40px;
+                height:40px;
+                background:transparent;
+                border:2px solid #0ef;
+                border-radius:50%;
+                font-size:20px;
+                color:aqua;
+                text-decoration:none;
+                margin:30px 15px 30px 0;
+                transition: -5s ease;
+                opacity:0;
+                animation:slideleft 1s ease forwards;
+
+            }
+            .Contact-icons i:hover{
+                background:#0ef;
+                color:#000;
+                box-shadow:0 0 20px #0ef;
+            }
+            .Contact-form form{
+                position:relative;
+            }
+          .Contact-form form input-form{
+              border:none;
+              outline:none;
+              width:90%;
+              padding:10px;
+              background:#555557;
+              color:#000;
+              font-size:1rem;
+              font-weight:600;
+              margin-bottom:0.5rem;
+              border-radius:0.5rem;
+
+
+          }
+    </style>
+
+    </head>
+    <body>
+    <section class="home">
+        <div class="home-contact">
+            <h3>Hello,It's Me </h3>
+            <h1>Ayesha</h1>
+            <h3>And I'm a<span class="text"></span> </h3>
+            <p> I'm a web Designer expertise is to create e web design,Frontened Design,and many more.....
+            </p>
+            <div class="home-sci">
+                <a href="a"><i class='bx bxl-facebook'></i></a>
+                <a href="a"><i class='bx bxl-instagram'></i></a>
+                <a href="a"><i class='bx bxl-whatsapp'></i></a>
+                <a href="a"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <a href="a" class="btn-box">More About Me</a>
+        </div>
+        <span class="home-imgeover"></span>
+    </section>
+       <section class="about" id="about">
+           <div class="about-img">
+            <img src="about.jpg" />
+           </div>
+           <div class=".~/about.jpg">
+               <h2>About<span >Me</span></h2>
+               <h3>Full Stack Developer</h3>
+            <p>
+                My name is Ayesha Arif. I am from Sialkot. I have completed my bachelor's degree or
+                Software Engineering from university of Sialkot. I belong to a nuclear family My hobbies
+                are reading books.My strengths are I am hard working and self motivating person and I have strong communication skill. I am quick learner. My short term goal is to get job in reputed company and long term goal is to achieve good position like yours where I can build my career and help the organization too.<br>
+            </p>
+            <a href="a" class="btn-box">More About Me</a>
+           </div>
+       </section>
+    <!-------------------Services------------------------->
+        <hr>
+        <section class="secondSection">
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    
+                    <div class="vertical-title">
+                        HTML developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image_top" src="~/bg.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML developer Facebook (2012-2014)
+                    </div>
+                    HTML developer is a professional web designer who uses HTML
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omnis ullam, enim facilis
+                        possimus accusamus ab! Dolores mollitia odio quos. Facilis,
+                        incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image_top" src="C:\Users\hp\Documents\youtube.png" alt="">
+                    <div class="vertical-title">
+                        HTML developer YouTube (2014-2015)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omnis ullam, enim facilis
+                        possimus accusamus ab! Dolores mollitia odio quos. Facilis,
+                        incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image_top" src="C:\Users\hp\Documents\twitter.png" alt="">
+                    <div class="vertical-title">
+                        HTML developer Twitter (2015-2016)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omnis ullam, enim facilis
+                        possimus accusamus ab! Dolores mollitia odio quos. Facilis,
+                        incidunt?
+                    </div>
+                </div>
+                </div>
+        </section>
+<section>
+    <div class="Contact" id="Contact">
+         <div class="Contact-text">
+             <h2>Contact<span>Me</span></h2>
+             <h4>lets work Together</h4>
+                     <p>
+                              Team work is the key to success and also makes a person humble.Team work ia a crucial to grown and self-development .Communication is an essential skill for good Team work.Team work teach you proper time and management skill.
+                     </p>
+               <div class="Contact-list">
+                    <li><i class='bx bxs-send'></i>Contact@gmail.com</li>
+                    <li><i class='bx bx-phone'></i>012345678</li>
+
+               </div>
+               <div class="Contact.icon">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-whatsapp'></i></a>
+               </div>
+                 </div>
+                 <div class="Contact-from">
+                     <form action="">
+                         <input type= "name" placeholder="Enter Your Name" required />
+                         <input type="email" placeholder="Enter Your Email" required />
+                         <input type="subject" placeholder="Enter Your Subject"  />
+                        <input type="button" value="submit" class="send" />                 
+                     </form>
+                 </div>
+             </div>
+       </section>
+    </body>
+</html>
+
